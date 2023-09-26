@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.countdown {
+    background : none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 32vh;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#timer {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+span {
+    margin: 0 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+#start{
+    background: #007BFF;
+}
+#stop{
+    background: rgb(244, 23, 23);
+}
+#reset{
+    background: yellow;
+}
+#restart{
+    background: rgb(6, 229, 6);
+}
+
+@media screen and (max-width: 500px){
+    .countdown{
+        height: auto;
+        width: 70vw;
+    }
+    button{
+        width: 100px;
+        margin: 10px 5px;
+    }
+}
+@media screen and (max-width: 450px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .countdown{
+        margin-top: 25vh;
+    }
+}
